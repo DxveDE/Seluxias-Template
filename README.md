@@ -1,6 +1,6 @@
 # Seluxias-Template
-![](https://img.shields.io/badge/Language-PHP,%20HTML%20&%20CSS-darkblue)
-![](https://img.shields.io/badge/CSS-Bootstrap%205.2-purple)
+[![](https://img.shields.io/badge/Language-PHP,%20HTML%20&%20CSS-darkblue)](#)
+[![](https://img.shields.io/badge/CSS-Bootstrap%205.2-purple)](#)
 
 Seluxias is a simple template for a landing page.
 Just change the colors in the configuration part of the `index.php` file.
@@ -11,7 +11,7 @@ In this template are the following parts:
 * About me / That's me
 * Content part (for texts or what ever) with images
 * My projects
-* footer
+* Footer
 
 
 
