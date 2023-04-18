@@ -13,19 +13,48 @@ date_default_timezone_set('Europe/Berlin');
 
 // General configuration
 $sitename = 'Seluxias Template';
-$domain = 'https://dxve.de/projects/seluxias';
+$domain = 'https://dxve.de/projects/mamba-dxve';
 $logo = 'https://cdn.upload-host.de/1/9e1281-b783a9.png';
 
 // Social media links
-$mail = 'kontakt@dxve.de';
-$twitter = 'https://twitter.com/@dxve_b';
-$instagram = 'https://www.instagram.com/dxve.b';
-$youtube = 'https://www.youtube.com/c/DxveDE';
-$tiktok = 'https://www.tiktok.com/@dxve.tiktok';
-$github = 'https://github.com/DxveDE';
-$facebook = 'https://www.facebook.com/dxve.bomke/';
-$discord = 'https://discord.com/users/681877886172659877';
-$whatsapp = 'https://wa.me/+4915251838855';
+$socialMedia = array(
+    array(
+        'icon' => '<i class="fab fa-discord"></i>',
+        'url' => 'https://discord.com/users/681877886172659877'
+    ),
+    array(
+        'icon' => '<i class="fab fa-instagram"></i>',
+        'url' => 'https://www.instagram.com/dxve.b'
+    ),
+    array(
+        'icon' => '<i class="fab fa-tiktok"></i>',
+        'url' => 'https://www.tiktok.com/@dxve.tiktok'
+    ),
+    array(
+        'icon' => '<i class="fab fa-youtube"></i>',
+        'url' => 'https://www.youtube.com/c/DxveDE'
+    ),
+    array(
+        'icon' => '<i class="fab fa-twitter"></i>',
+        'url' => 'https://twitter.com/@dxve_b'
+    ),
+    array(
+        'icon' => '<i class="fab fa-facebook"></i>',
+        'url' => 'https://www.facebook.com/dxve.bomke/'
+    ),
+    array(
+        'icon' => '<i class="fab fa-github"></i>',
+        'url' => 'https://github.com/DxveDE'
+    ),
+    array(
+        'icon' => '<i class="fab fa-whatsapp"></i>',
+        'url' => 'https://wa.me/+4915251838855'
+    ),
+    array(
+        'icon' => '<i class="fas fa-envelope"></i>',
+        'url' => 'mailto:kontakt@dxve.de'
+    )
+);
 
 // Color settings
 $titleColor = '#FF7F7F'; // Color of the titles
@@ -91,8 +120,8 @@ $boxShadow = '#000000';
 
         
         <title><?= $sitename ?> | Homepage</title>
-        <meta content="" name="description">
-        <meta content="dxvede,dxve,website,free,template,html,css,js,javascript" name="keywords">
+        <meta content="That's my landing page!" name="description">
+        <meta content="dxvede,dxve,website,free,template,html,css,js,javascript,seluxias" name="keywords">
 
         <!-- Favicons -->
         <link href="<?= $logo ?>" rel="icon">
@@ -762,15 +791,11 @@ $boxShadow = '#000000';
             <div class="container">
                 <!-- Social media | start -->
                 <div class="social-links text-center" style="padding-top: 20px;">
-                    <a href="<?= $discord?>" target="_blank"><i class="fab fa-discord"></i></a>
-                    <a href="<?= $instagram?>" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="<?= $tiktok?>" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="<?= $youtube?>" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="<?= $twitter?>" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="<?= $facebook?>" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="<?= $github?>" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="<?= $whatsapp?>" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:<?= $mail?>" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <?php
+                    foreach ($socialMedia as $list) {
+                        echo '<a href="' . $list['url'] . '" target="_blank">' . $list['icon'] . '</a>';
+                    }
+                    ?>
                 </div>
                 <!-- Social media | end -->
 
