@@ -18,7 +18,7 @@ In this template are the following parts:
 ## Table Of Contents
 
 * [Demo](#demo)
-* [Preview](#preview)
+* [Preview](#website-preview)
 * [Configuration](#configuration)
 
 
