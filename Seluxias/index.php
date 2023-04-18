@@ -13,7 +13,7 @@ date_default_timezone_set('Europe/Berlin');
 
 // General configuration
 $sitename = 'Seluxias Template';
-$domain = 'https://dxve.de/projects/mamba-dxve';
+$domain = 'https://dxve.de/projects/seluxias';
 $logo = 'https://cdn.upload-host.de/1/9e1281-b783a9.png';
 
 // Social media links
