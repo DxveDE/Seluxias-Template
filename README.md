@@ -54,15 +54,44 @@ $domain = 'https://dxve.de/projects/mamba-dxve';
 $logo = 'https://cdn.upload-host.de/1/9e1281-b783a9.png';
 
 // Social media links
-$mail = 'kontakt@dxve.de';
-$twitter = 'https://twitter.com/@dxve_b';
-$instagram = 'https://www.instagram.com/dxve.b';
-$youtube = 'https://www.youtube.com/c/DxveDE';
-$tiktok = 'https://www.tiktok.com/@dxve.tiktok';
-$github = 'https://github.com/DxveDE';
-$facebook = 'https://www.facebook.com/dxve.bomke/';
-$discord = 'https://discord.com/users/681877886172659877';
-$whatsapp = 'https://wa.me/+4915251838855';
+$socialMedia = array(
+    array(
+        'icon' => '<i class="fab fa-discord"></i>',
+        'url' => 'https://discord.com/users/681877886172659877'
+    ),
+    array(
+        'icon' => '<i class="fab fa-instagram"></i>',
+        'url' => 'https://www.instagram.com/dxve.b'
+    ),
+    array(
+        'icon' => '<i class="fab fa-tiktok"></i>',
+        'url' => 'https://www.tiktok.com/@dxve.tiktok'
+    ),
+    array(
+        'icon' => '<i class="fab fa-youtube"></i>',
+        'url' => 'https://www.youtube.com/c/DxveDE'
+    ),
+    array(
+        'icon' => '<i class="fab fa-twitter"></i>',
+        'url' => 'https://twitter.com/@dxve_b'
+    ),
+    array(
+        'icon' => '<i class="fab fa-facebook"></i>',
+        'url' => 'https://www.facebook.com/dxve.bomke/'
+    ),
+    array(
+        'icon' => '<i class="fab fa-github"></i>',
+        'url' => 'https://github.com/DxveDE'
+    ),
+    array(
+        'icon' => '<i class="fab fa-whatsapp"></i>',
+        'url' => 'https://wa.me/+4915251838855'
+    ),
+    array(
+        'icon' => '<i class="fas fa-envelope"></i>',
+        'url' => 'mailto:kontakt@dxve.de'
+    )
+);
 
 // Color settings
 $titleColor = '#FF7F7F'; // Color of the titles
